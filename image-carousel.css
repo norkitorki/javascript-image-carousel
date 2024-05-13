@@ -1,0 +1,77 @@
+.image.carousel {
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+.carousel-frame {
+  position: relative;
+  box-sizing: border-box;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.slides {
+  display: flex;
+  align-items: center;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.slides > img {
+  width: auto;
+  box-sizing: border-box;
+  transform: scale(0.3);
+  filter: brightness(0.2);
+  transition: transform 0.75s ease-in-out, filter 0.75s ease;
+}
+
+.slides > .active-slide {
+  z-index: 1000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: scale(1);
+  transform: translate(-50%, -50%);
+  filter: brightness(1);
+}
+
+.arrow-left,
+.arrow-right {
+  z-index: 1001;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  background: none;
+  border: none;
+}
+
+.arrow-left:hover,
+.arrow-left:focus,
+.arrow-right:hover,
+.arrow-right:focus {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.carousel-navigator {
+  text-align: center;
+}
+
+.carousel-navigator > button:not(:first-child) {
+  margin-left: 5px;
+}
+
+.carousel-navigator > button {
+  width: 10px;
+  height: 10px;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.carousel-navigator > .selected {
+  background-color: #0d88a7;
+}
