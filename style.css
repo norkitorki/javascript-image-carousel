@@ -1,0 +1,10 @@
+h1,
+h3 {
+  text-align: center;
+}
+
+.my-carousel {
+  background-color: #000000;
+  max-width: 850px;
+  margin: 0 auto;
+}
