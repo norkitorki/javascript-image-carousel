@@ -21,8 +21,6 @@
 }
 
 .slides > img {
-  width: auto;
-  box-sizing: border-box;
   transform: scale(0.3);
   filter: brightness(0.2);
   transition: transform 0.75s ease-in-out, filter 0.75s ease;
