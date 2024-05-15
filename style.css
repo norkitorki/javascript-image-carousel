@@ -7,4 +7,5 @@ h3 {
   background-color: #000000;
   max-width: 850px;
   margin: 0 auto;
+  border-radius: 0.5rem;
 }
