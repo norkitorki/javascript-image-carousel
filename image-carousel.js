@@ -1,6 +1,6 @@
 function imageCarousel(
   parentNode,
-  options = { maxHeight: false, slideInterval: 0, revertTraversal: false }
+  options = { height: false, slideInterval: 0, revertTraversal: false }
 ) {
   const carousel = parentNode.querySelector('.image-carousel');
   const slides = carousel.querySelector('.slides');
