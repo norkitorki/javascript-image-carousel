@@ -16,13 +16,13 @@ Append your images to the div element with a class value of 'slides'.
 ```html
 <section class="my-image-carousel">
   <div class="image-carousel">
+    <button class="arrow-left"><</button>
     <div class="carousel-frame">
-      <button class="arrow-left"><</button>
       <div class="slides">
         <!-- Append your images via <img> elements to this div -->
       </div>
-      <button class="arrow-right">></button>
     </div>
+    <button class="arrow-right">></button>
     <div class="carousel-navigator"></div>
   </div>
 </section>
