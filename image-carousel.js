@@ -26,6 +26,8 @@ function imageCarousel(
   carousel.style.height = `${slideMaxHeight}px`;
   slides.style.height = `${slideMaxHeight - 30}px`;
 
+  slides.setAttribute('tabindex', -1);
+
   if (options.slideInterval > 0) {
     let reversing = false;
 
